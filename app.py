@@ -15,11 +15,11 @@ import subprocess
 from aiohttp import web
 
 # 环境变量
-UUID = os.environ.get('UUID', '7bd180e8-1142-4387-93f5-03e8d750a896')   # 节点UUID
+UUID = os.environ.get('UUID', '9ad0c21d-dc47-460c-9551-e5534870eaf1')   # 节点UUID
 NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')    # 哪吒v0填写格式: nezha.xxx.com  哪吒v1填写格式: nezha.xxx.com:8008
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '')        # 哪吒v1请留空，哪吒v0 agent端口
 NEZHA_KEY = os.environ.get('NEZHA_KEY', '')          # 哪吒v0或v1密钥，哪吒面板后台命令里获取
-DOMAIN = os.environ.get('DOMAIN', '')                # 项目分配的域名或反代后的域名,不包含https://前缀,例如: domain.xxx.com
+DOMAIN = os.environ.get('DOMAIN', 'qaf.hd0130nd.dpdns.org')                # 项目分配的域名或反代后的域名,不包含https://前缀,例如: domain.xxx.com
 SUB_PATH = os.environ.get('SUB_PATH', 'sub')         # 节点订阅token
 NAME = os.environ.get('NAME', '')                    # 节点名称
 WSPATH = os.environ.get('WSPATH', UUID[:8])          # 节点路径
